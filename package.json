@@ -1,0 +1,75 @@
+{
+  "name": "@rmcquiston/ollama-api-component",
+  "version": "0.1.0",
+  "description": "Reusable TypeScript component for making Ollama API requests. Easily integrated into NestJS or Next.js API projects.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./nest": {
+      "import": "./dist/nest/index.js",
+      "types": "./dist/nest/index.d.ts"
+    },
+    "./next": {
+      "import": "./dist/next/index.js",
+      "types": "./dist/next/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && esbuild src/**/*.ts --format=esm --outdir=dist --keep-names",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write 'src/**/*.ts'",
+    "format:check": "prettier --check 'src/**/*.ts'",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmcquiston/ollama-api-component"
+  },
+  "keywords": [
+    "ollama",
+    "api",
+    "typescript",
+    "nestjs",
+    "nextjs",
+    "component",
+    "llm",
+    "ai"
+  ],
+  "author": "Richard McQuiston",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "next": "^13.0.0 || ^14.0.0",
+    "@nestjs/common": "^9.0.0 || ^10.0.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    },
+    "@nestjs/common": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "esbuild": "^0.19.11",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

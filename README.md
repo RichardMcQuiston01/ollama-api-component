@@ -1,2 +1,7 @@
-# ollama-api-component
-Reusable TypeScript component for making Ollama API requests.  Component should be easily integrated into a NestJS or Next.js API Project.
+# Ollama API Component
+
+Reusable TypeScript component for making Ollama API requests. Component should be easily integrated into a NestJS or Next.js API Project.
+
+## API Reference
+
+- [Ollama API Reference](https://docs.ollama.com/api)

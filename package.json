@@ -1,6 +1,6 @@
 {
   "name": "@rmcquiston/ollama-api-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reusable TypeScript component for making Ollama API requests. Easily integrated into NestJS or Next.js API projects.",
   "type": "module",
   "main": "./dist/index.js",

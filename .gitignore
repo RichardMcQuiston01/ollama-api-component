@@ -48,3 +48,5 @@ Thumbs.db
 
 # Build tools
 .cache/
+
+.npmrc
